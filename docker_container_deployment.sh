@@ -13,7 +13,7 @@ docker pull wordpress:4.9.1-php7.0-apache
 docker stop my-wordpress
 docker rm -f my-wordpress
 
-#Create new docker container
+#Create new wordpress docker container
 docker run \
 --name my-wordpress \
 -h $(hostname) \
