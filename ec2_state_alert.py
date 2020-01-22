@@ -50,7 +50,7 @@ def lambda_handler(event, context):
     #Send Mail if sendMail action true
     if sendMail:
         response = sns_client.publish(
-        TargetArn='your sns arn',
+        TargetArn='your_sns_arn',
         Message=json.dumps({'default': json.dumps(response)}),
         Subject='Alert! Unexpected EC2 state is detected. Check the AWS Console.',
         MessageStructure='json'
